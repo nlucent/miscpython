@@ -1,0 +1,20 @@
+{ 
+    "ignored": [ "AK","AL","AR","AZ","CA","CO","CT","DC","DE","FL","GA","GU","HI","IA","ID", "IL","IN","KS","KY","LA","MA","MD","ME","MH","MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY", "OH","OK","OR","PA","PR","PW","RI","SC","SD","TN","TX","UT","VA","VI","VT","WA","WI","WV","WY" ],
+    "corrections": { "5GUYS": "FIVE GUYS",
+                    "AT&T": "ATT MOBILE" },
+    "categories": { 
+        "groceries": ["HANNAFORD", "SHAW", "SAFEWAY"],
+        "gas": ["SUNOCO","LOAF N JUG", "BP","SHELL"],
+        "restaurants": ["QDOBA","BASKIN","ROADHOUSE"],
+        "man care": ["FLOYDS","BARBER"],
+        "girl care": ["NAIL", " SPA "],   
+        "insurance": ["STATE FARM"],
+        "liquor": ["LIQUOR", "SPIRITS", "WINE"],
+        "amazon": ["AMAZON"],          
+        "house": ["ACEHARD"," ACE ","HOME DEPOT", "LOWE"],        
+        "phone": ["ATT", "VONAGE"],
+        "dog": ["VET", "PETSMART", "PETCO"],
+        "health": ["MEDICAL","HOSPITAL"],
+        "entertainment": ["TICKETMASTER","SIRIUS", "STEAM","NETFLIX"]
+    }
+}
