@@ -1,6 +1,6 @@
 Miscellaneous python scripts
 
-AmexCSVReport - use Python and Pandas to group and track spending from a CSV bank statement
+BudgetReport - use Python and Pandas to group and track spending from a CSV bank statement, comparing to a budget hosted on Google Sheets.
 <br>
 Bookmarks - Parse Google Chrome bookmarks file
 <br>
