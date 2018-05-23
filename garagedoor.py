@@ -69,8 +69,7 @@ class GarageDaemon():
         return
 
     def checkDoorStatus(self):
-        global door1, door2
-
+        
         # Genie switches ground when active
         for door in [self.door1, self.door2]:
             o_val = GPIO.input(door['switch'])
@@ -89,7 +88,6 @@ class GarageDaemon():
                     self.sendMessage(str(door['Id']) + "=:=closed")
 
     def activateDoor(self, doorPin):
-        global door1, door2
 
         if doorPin == self.door1['relay']:
             if self.door1['open']:

@@ -40,8 +40,7 @@ class OraReport:
             print ("Error reading file")
             return 1
 
-        fileInfo = reportFile.split(
-            "_")                        # Report name uses _ instead of spaces
+        fileInfo = reportFile.split("_")                        # Report name uses _ instead of spaces
         fileJunk = fileInfo[0].split('\\')
                                      # Remove path info (Windows)
         shortHost = fileJunk[-1].split(".")[0].upper()  # Get host shortname
@@ -121,25 +120,17 @@ class OraReport:
     def printReport(self, dbdata):
 
         # Print results
-        print
         print("Sizing results for DB instance {0} on host {1}").format(
             dbdata["DBName"], dbdata["Hostname"])
-        print
         print("{0:17} {1:12} {2:10}").format("MountPoint", "MB", "GB")
         print("-") * 35
-        print("{0:12} {1:10} {2:10}").format(
-            "DB SW", dbdata["DB"], math.ceil(dbdata["DB"] / 1000))
-        print("{0:12} {1:10} {2:10}").format(
-            "SapMnt", dbdata["SapMnt"], math.ceil(dbdata["SapMnt"] / 1000))
-        print("{0:12} {1:10} {2:10}").format(
-            "SapArch", dbdata["SapArch"], math.ceil(dbdata["SapArch"] / 1000))
-        print("{0:12} {1:10} {2:10}").format(
-            "SapData1", dbdata["SapData1"], math.ceil(dbdata["SapData1"] / 1000))
-        print("{0} ({1}D) {2:9} {3:10}").format("Archive", dbdata[
-                                                "ArchiveCount"], dbdata["Archive"], math.ceil(dbdata["Archive"] / 1000))
+        print("{0:12} {1:10} {2:10}").format("DB SW", dbdata["DB"], math.ceil(dbdata["DB"] / 1000))
+        print("{0:12} {1:10} {2:10}").format("SapMnt", dbdata["SapMnt"], math.ceil(dbdata["SapMnt"] / 1000))
+        print("{0:12} {1:10} {2:10}").format("SapArch", dbdata["SapArch"], math.ceil(dbdata["SapArch"] / 1000))
+        print("{0:12} {1:10} {2:10}").format("SapData1", dbdata["SapData1"], math.ceil(dbdata["SapData1"] / 1000))
+        print("{0} ({1}D) {2:9} {3:10}").format("Archive", dbdata["ArchiveCount"], dbdata["Archive"], math.ceil(dbdata["Archive"] / 1000))
         print("-") * 35
-        print("{0:12} {1:10} {2:10}").format(
-            "Totals", dbdata["TotalSize"], math.ceil(dbdata["TotalSize"] / 1000))
+        print("{0:12} {1:10} {2:10}").format("Totals", dbdata["TotalSize"], math.ceil(dbdata["TotalSize"] / 1000))
 
 
 class OraWeb:
